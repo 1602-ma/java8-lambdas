@@ -25,6 +25,7 @@ public class Test01 {
         // lambda表达式
         button.addActionListener(event -> {
             System.out.println("button clicked");
+            System.out.println(event.getActionCommand());
         });
 
 

@@ -13,14 +13,14 @@ public class Test03 {
     public static void main(String[] args) {
 //        final String name = "lambda";
         String name = "lambda";
-        name = "see";
+//        name = "see";
         Button button = new Button();
-//        button.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                System.out.println("hi " + name);
-//            }
-//        });
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("hi " + name);
+            }
+        });
 
 //        button.addActionListener(event -> {
 //            System.out.println("hi " + name);

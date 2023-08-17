@@ -11,11 +11,17 @@ public class Test02 {
 
     public static void main(String[] args) {
         Runnable noArguments = () -> System.out.println("hello lambda");
+
         ActionListener oneArgument = event -> System.out.println("button clicked");
+
         Runnable multiStatement = () -> {
             System.out.println("hello lambda");
         };
+
         BinaryOperator<Long> add = (x, y) -> x+ y;
+
         BinaryOperator<Long> addExplicit = (Long x, Long y) -> x + y;
+
+        final String[] arr = {"hello", "lambda"};
     }
 }

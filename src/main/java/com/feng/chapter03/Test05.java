@@ -9,10 +9,10 @@ import java.util.stream.Stream;
 public class Test05 {
 
     public static void main(String[] args) {
-        Integer count = Stream.of(1, 2, 3, 4).reduce(2, (acc, element) -> acc + element);
+        Integer count = Stream.of(1, 2, 3, 4).reduce(0, Integer::sum);
         System.out.println(count);
 
-        Integer integer = Stream.of(1, 2, 3, 4).reduce((acc, ele) -> acc + ele).get();
+        Integer integer = Stream.of(1, 2, 3, 4).reduce(Integer::sum).get();
         System.out.println(integer);
     }
 }

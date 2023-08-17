@@ -15,7 +15,7 @@ public class Test02 {
         System.out.println(collect);
 
         List<String> strList = Stream.of("a", "b", "c")
-                .map(string -> string.toUpperCase())
+                .map(String::toUpperCase)
                 .collect(Collectors.toList());
         System.out.println(strList);
 
