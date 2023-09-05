@@ -14,4 +14,6 @@ import lombok.NoArgsConstructor;
 public class Track {
 
 	private String name;
+
+	private Integer length;
 }
